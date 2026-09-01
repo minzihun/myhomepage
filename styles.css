@@ -75,19 +75,32 @@ body {
 .profile-section {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 3rem;
     margin-bottom: 3rem;
     flex-wrap: wrap;
 }
 
-.profile-image {
-    width: 200px;
-    height: 200px;
+/* Profile Image Container */
+.profile-image-container {
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    object-fit: cover;
     border: 5px solid #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     box-shadow: 0 10px 40px rgba(37, 99, 235, 0.2);
     flex-shrink: 0;
+    background: white;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .intro-text {
@@ -366,9 +379,9 @@ section h2 {
         gap: 1.5rem;
     }
 
-    .profile-image {
-        width: 150px;
-        height: 150px;
+    .profile-image-container {
+        width: 180px;
+        height: 180px;
     }
 
     .intro-text {
